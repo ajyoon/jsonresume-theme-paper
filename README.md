@@ -10,7 +10,7 @@ The original git branch can be found on Github
 
 ## Demo
 An example of this theme with its customizations can be found
-on my website [here](andrewjyoon.com/static/resume.html).
+on my website [here](http://andrewjyoon.com/static/resume.html).
 
 ## Installation
 To get set up, clone this repository to your local system and
