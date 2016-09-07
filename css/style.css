@@ -1,7 +1,10 @@
 body, html {
-  padding-top:2.5em;
   margin:0;
   background-color:#fafafa;
+}
+
+body {
+  padding-top: 2.5em;
 }
 
 .note {
@@ -29,7 +32,7 @@ header {
   width:100%;
   vertical-align: middle;
   text-align: center;
- 
+
 }
 
 .header-content {
@@ -39,14 +42,14 @@ header {
 .pic {
   margin: 0 auto;
   margin-top:-2.5em;
-  
+
   border-radius:10em;
   height:4em;
   width:4em;
-  
+
   border: 2px solid #e0e0e0;
   transition : all 0.5s linear;
-  
+
 }
 
 @-webkit-keyframes wiggle {
@@ -67,9 +70,9 @@ header {
 .pic:hover {
   /*Webkit fix*/
   -webkit-transform: translateZ(0);
-  
+
   cursor:pointer;
-  
+
   -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
@@ -81,9 +84,8 @@ header {
 header p {
   text-align:center;
   font-family: "Merriweather";
-  
-  margin:0;
-  
+  font-weight: 300;
+  margin: 0;
   color: #212121;
 }
 
@@ -92,24 +94,22 @@ header p {
 }
 
 .subtitle {
-  font-family: "Merriweather";
   padding-top:.3em;
   font-size:0.55em;
-  font-weight:500;
+  font-weight:300;
   color: #424242;
 }
 
 /* Information */
 
 .paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-  
+  margin: 1em auto;
+
   background-color:white;
   width:60%;
-  
-  padding:0.5em 0 0.5em 0;
-  
+
+  padding: 3em 0 0.5em 0;
+
   border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
@@ -132,9 +132,9 @@ header p {
 .content {
   display:table;
   width:100%;
-  
+
   padding-top:1.5em;
-  
+
   /*border-top: 1px solid #eeeeee;*/
 }
 
@@ -157,12 +157,12 @@ body > div > article > div > section:last-child {
   font-family: "Merriweather";
   font-variant:small-caps;
   font-weight:300;
-  letter-spacing: 1px;
-  
+  /*letter-spacing: 1px;*/
+
   color: #212121;
-  
+
   font-size:0.975em;
-  
+
   text-align:center;
   vertical-align:middle;
 
@@ -173,7 +173,7 @@ body > div > article > div > section:last-child {
 .content-cat p {
   font-size:0.55em;
   font-weight:600;
-  
+
   margin-bottom:0;
 }
 
@@ -190,7 +190,7 @@ body > div > article > div > section:last-child {
   padding:0;
   margin:0;
   margin-top:0.15em;
-  
+
   width:85%;
   margin-left:1.5em;
 }
@@ -202,16 +202,15 @@ body > div > article > div > section:last-child {
 .content-text ul li {
   font-family: "Open Sans";
   font-size:0.7em;
-  
   display:inline-block;
-  
+  vertical-align: top;
 }
 
 .content-text ul li:first-child {
   width:35%;
-  
+
   color: #424242;
-  
+
   font-weight:600;
 }
 
@@ -227,9 +226,9 @@ body > div > article > div > section:last-child {
 .work-listing p {
   font-family: "Open Sans";
   font-size:0.7em;
-  
+
   color: #424242;
-  
+
   margin-left:2em;
   margin-top:0.45em;
   margin-bottom: 0.45em;
@@ -243,19 +242,19 @@ div.content-text.work-listing.education-listing > p:nth-child(2) {
   font-family: "Open Sans";
   font-size:0.7em;
   font-weight:400;
-  
+
   color: #424242;
-  
+
   margin-left:3.25em;
   padding-left:0.5em;
-  
+
   border-left:1px solid #e0e0e0;
-  
+
 }
 
 .education-listing > .heading {
   font-weight:600;
-  
+
   margin-top:0.75em;
   margin-left:2em;
 }
@@ -294,4 +293,3 @@ div.content-text.skills-listing > p {
 div.content-text.skills-listing > p > {
   color:#212121;
 }
-

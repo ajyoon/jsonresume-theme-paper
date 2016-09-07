@@ -4,11 +4,17 @@ body, html {
   padding-top: 1.5em;
 }
 
+a {
+  color: black !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .paper {
   width:100%;
   border: 0;
-
   padding-top: 0;
+  padding: 0;
 }
 
 header p {
@@ -23,12 +29,8 @@ header p {
   float:left;
 }
 
-.profiles {
-  display:none;
-}
-
 .content {
-  page-break-inside:avoid; 
+  page-break-inside:avoid;
   page-break-after:auto;
 }
 
@@ -105,9 +107,9 @@ div.content-text.skills-listing > ul > li:first-child {
   border-left:1px solid #eeeeee;
 }
 
-.content-text ul li a:hover {
+/*.content-text ul li a:hover {
   color:#4fc3f7;
-}
+}*/
 
 .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
   border-left:1px solid #eeeeee;

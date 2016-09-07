@@ -10,45 +10,21 @@ function render(resume) {
 
     // Register custom handlebars extensions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // foreach loops //
-    // http://stackoverflow.com/a/12002281/1263876
-    Handlebars.registerHelper("foreach",function(arr,options) {
+    // Modified from http://stackoverflow.com/a/12002281/1263876
+    Handlebars.registerHelper("foreach", function(arr,options) {
         if(options.inverse && !arr.length)
             return options.inverse(this);
-
+        if(options.hash["reverse"] === "true") arr.reverse();
         return arr.map(function(item,index) {
             item.$index = index;
             item.$first = index === 0;
             item.$notfirst = index !== 0;
-            item.$last  = index === arr.length-1;
+            item.$last  = index === arr.length - 1;
             return options.fn(item);
         }).join('');
     });
-    // Logic operators //
-    // http://stackoverflow.com/a/16315366
-    Handlebars.registerHelper('ifCond', function (v1, operator, v2, options) {
-        switch (operator) {
-            case '==':
-                return (v1 == v2) ? options.fn(this) : options.inverse(this);
-            case '===':
-                return (v1 === v2) ? options.fn(this) : options.inverse(this);
-            case '<':
-                return (v1 < v2) ? options.fn(this) : options.inverse(this);
-            case '<=':
-                return (v1 <= v2) ? options.fn(this) : options.inverse(this);
-            case '>':
-                return (v1 > v2) ? options.fn(this) : options.inverse(this);
-            case '>=':
-                return (v1 >= v2) ? options.fn(this) : options.inverse(this);
-            case '&&':
-                return (v1 && v2) ? options.fn(this) : options.inverse(this);
-            case '||':
-                return (v1 || v2) ? options.fn(this) : options.inverse(this);
-            default:
-                return options.inverse(this);
-        }
-    });
     // comma separated lists //
-    // http://stackoverflow.com/a/18831911
+    // copied from http://stackoverflow.com/a/18831911
     Handlebars.registerHelper('commalist', function(items, options) {
         return options.fn(items.join(', '));
     });
