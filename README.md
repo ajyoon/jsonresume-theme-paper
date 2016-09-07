@@ -3,10 +3,21 @@
 
 This is a theme for [JSON Resume](http://jsonresume.org/).
 This is a fork of the `jsonresume-theme-paper` theme by Tim Daub
-with minor customizations I made for my own resume.
+with minor customizations I made for my own resume, made publicly
+available for anyone else who may be prefer the minor changes here.
 
 The original git branch can be found on Github
 [here](https://github.com/TimDaub/jsonresume-theme-paper).
+
+The notable differences from the original are:
+
+* Profiles are grouped together under Contact information
+* The list of work experiences is in reverse order
+  (really just a hack to float "... to Present" items to the top,
+  you can undo this by changing line `146` in `resume.template`,
+  removing `reverse="true"`)
+* The Education list allows for an optional `note` field for
+  each institution
 
 ## Demo
 An example of this theme with its customizations can be found
